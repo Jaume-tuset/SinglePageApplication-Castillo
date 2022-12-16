@@ -1,12 +1,59 @@
 export { home };
 
 import "../scss/styleBody.css";
+import "../scss/styleCabecera.css";
 
 function home() {
   let mainWindowRow = document.createElement("div");
   mainWindowRow.id = "body_cine";
   mainWindowRow.classList.add("container");
   mainWindowRow.innerHTML = `
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <br><br>
+  <div class="wrapper">
+  <div class="slider" id="slider">
+    <ul class="slides">
+      <li class="slide" id="slide1">
+        <a href="#">
+          <img src="https://tajfzqkqohgahoamefgi.supabase.co/storage/v1/object/public/imgs/cabecera/LOR.jpg?t=2022-12-14T18%3A52%3A07.212Z" alt="photo 1">
+        </a>
+      </li>
+      <li class="slide" id="slide2">
+        <a href="#">
+          <img src="https://tajfzqkqohgahoamefgi.supabase.co/storage/v1/object/public/imgs/cabecera/avatar.jpg?t=2022-12-14T18%3A53%3A04.060Z" alt="photo 2">
+        </a>
+      </li>
+      <li class="slide" id="slide3">
+        <a href="#">
+          <img src="https://tajfzqkqohgahoamefgi.supabase.co/storage/v1/object/public/imgs/cabecera/batman.jpg?t=2022-12-14T18%3A53%3A10.539Z" alt="photo 3">
+        </a>
+      </li>
+      <li class="slide" id="slide4">
+        <a href="#">
+          <img src="https://tajfzqkqohgahoamefgi.supabase.co/storage/v1/object/public/imgs/cabecera/ice_age.jpg?t=2022-12-14T18%3A53%3A20.734Z" alt="photo 4">
+        </a>
+      </li>
+      <li class="slide" id="slide5">
+        <a href="#">
+          <img src="https://tajfzqkqohgahoamefgi.supabase.co/storage/v1/object/public/imgs/cabecera/jurassick_park.jpg?t=2022-12-14T18%3A53%3A31.538Z" alt="photo 5">
+        </a>
+      </li>
+      <li class="slide" id="slide6">
+        <a href="#">
+          <img src="https://tajfzqkqohgahoamefgi.supabase.co/storage/v1/object/public/imgs/cabecera/star_wars.jpg?t=2022-12-14T18%3A53%3A43.185Z" alt="photo 6">
+        </a>
+      <li class="slide">
+        <a href="#">
+          <img src="https://tajfzqkqohgahoamefgi.supabase.co/storage/v1/object/public/imgs/header/camera-header.jpg" alt="cabecera">
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
   <article class="col-md-12">
         <header>
             <h2>NOTICIAS</h2> </header>

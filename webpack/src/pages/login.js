@@ -4,46 +4,43 @@ import { loginUser, logout, forgotPassword } from "../services/users.js";
 function loginForm() {
   let divLogin = document.createElement("div");
   divLogin.classList.add("formulari_centrat");
-  divLogin.innerHTML = `
+
+  divLogin.innerHTML = `  
   <form action="action_page.php" method="post">
-  <section class="vh-100" style="background-color: #508bfc;">
-  <div class="container py-5 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-        <div class="card shadow-2-strong" style="border-radius: 1rem;">
-          <div class="card-body p-5 text-center">
+    <div class="container">
+    <h2>LOGIN</h2>
+      <label for="uname"><b>Username</b></label>
+      <input
+        type="text"
+        placeholder="Enter Username"
+        name="uname"
+        required
+        id="loginemail"
+      />
+      <p id="errors"></p>
 
-            <h3 class="mb-5">Sign in</h3>
-
-            <div class="form-outline mb-4">
-              <input type="text" id="loginemail" class="form-control form-control-lg" name="uname" required />
-              <label class="form-label" for="uname">Email</label>
-            </div>
-
-            <div class="form-outline mb-4">
-              <input type="password" id="loginpassword" class="form-control form-control-lg" name="psw" required />
-              <label class="form-label" for="psw">Password</label>
-            </div>
-
-            <button id="loginbutton" class="login" class="btn btn-primary btn-lg btn-block" type="button">Login</button>
-            <label>
-                <input type="checkbox" checked="checked" name="remember" /> Remember me
-            </label>
-            
-            <hr class="my-4">
-
-            <button class="btn btn-lg btn-block btn-primary" style="background-color: #dd4b39;"
-              type="submit"><i class="fab fa-google me-2"></i> Sign in with google</button>
-            <button class="btn btn-lg btn-block btn-primary mb-2" style="background-color: #3b5998;"
-              type="submit"><i class="fab fa-facebook-f me-2"></i>Sign in with facebook</button>
-
-          </div>
-        </div>
-      </div>
+      <label for="psw"><b>Password</b></label>
+      <input
+        type="password"
+        placeholder="Enter Password"
+        name="psw"
+        required
+        id="loginpassword"
+      />
+    <br>
+      <button class="login" type="button" id="loginbutton" style="margin: 0px  0px 0px 47.5%;">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" />
+        Remember me
+      </label>
     </div>
-  </div>
-</section>
-</form>`;
+
+    <div class="container" style="background-color: #f1f1f1" >
+      <button type="button" class="login cancelbtn" id="logoutbtn" style="margin: 0px  0px 0px 47%;">Logout</button>
+      <br>
+      <span class="psw">Forgot <a href="#/register" id="forgot">password?</a></span>
+    </div>
+  </form>`;
 
   divLogin.querySelector("#loginbutton").addEventListener("click", async () => {
     let email = divLogin.querySelector("#loginemail").value;
