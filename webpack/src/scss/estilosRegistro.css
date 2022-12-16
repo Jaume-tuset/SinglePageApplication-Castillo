@@ -1,0 +1,41 @@
+form .container{
+    margin: 10px auto;
+    padding: 1%;
+    background:linear-gradient(30deg, crimson,sienna, royalblue, indianred, purple);
+    color: white;
+
+}
+form h1,p{
+    text-align: center;
+}
+
+form label,input{
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+form label{
+    border-radius: 20px 20px 20px;
+    width: 20%;
+    padding: 1%;
+    font-size: 17px;
+    -webkit-border-radius: 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px;
+    -ms-border-radius: 20px 20px 20px;
+    -o-border-radius: 20px 20px 20px;
+}
+
+form input{
+    padding: 1%;
+     border-radius: 20px 20px 20px;
+}
+
+form .clearfix{
+    text-align: center;
+    padding: 1%;
+}
+
+form .clearfix button{
+        border-radius: 20px 20px 20px;
+}

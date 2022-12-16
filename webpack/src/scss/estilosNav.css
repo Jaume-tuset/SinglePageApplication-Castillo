@@ -1,0 +1,26 @@
+nav .container{
+    background-color: rgb(138, 77, 138);
+    padding: 1%;
+}
+.container a:link{
+    text-decoration: none;
+}
+
+nav .container .navbar-brand{
+    font-size: 2em;
+    font-style: italic;
+}
+nav .container li a{
+    background-color:rgb(138, 77, 138);
+    color: white;
+}
+
+nav .container li a:hover{
+  background-color: Lavender;
+  border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -ms-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+}
+
